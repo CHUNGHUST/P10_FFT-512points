@@ -1,0 +1,27 @@
+--cpu Cortex-M3
+"p10_512points\startup_stm32f103xb.o"
+"p10_512points\main.o"
+"p10_512points\gpio.o"
+"p10_512points\adc.o"
+"p10_512points\tim.o"
+"p10_512points\stm32f1xx_it.o"
+"p10_512points\stm32f1xx_hal_msp.o"
+"p10_512points\stm32f1xx_hal_gpio_ex.o"
+"p10_512points\stm32f1xx_hal_adc.o"
+"p10_512points\stm32f1xx_hal_adc_ex.o"
+"p10_512points\stm32f1xx_hal_tim.o"
+"p10_512points\stm32f1xx_hal_tim_ex.o"
+"p10_512points\stm32f1xx_hal.o"
+"p10_512points\stm32f1xx_hal_rcc.o"
+"p10_512points\stm32f1xx_hal_rcc_ex.o"
+"p10_512points\stm32f1xx_hal_gpio.o"
+"p10_512points\stm32f1xx_hal_dma.o"
+"p10_512points\stm32f1xx_hal_cortex.o"
+"p10_512points\stm32f1xx_hal_pwr.o"
+"p10_512points\stm32f1xx_hal_flash.o"
+"p10_512points\stm32f1xx_hal_flash_ex.o"
+"p10_512points\system_stm32f1xx.o"
+--strict --scatter "P10_512points\P10_512points.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "P10_512points.map" -o P10_512points\P10_512points.axf
